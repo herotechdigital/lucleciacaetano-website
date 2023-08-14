@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+:root {
+    --border-radius: 12px;
+
+    --color-primary: #029837;
+    --color-secundary: #0B6822;
+    --color-terciary: #9EE595;
+    --color-white: #FFFFFF;
+    --color-neutral-2: #F3F3F3;
+    --color-azul-1: #000033;
+    --color-black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-important {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.head-1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.top-sections {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.paragraph {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+.paragraph-1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.paragraph-2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.paragraph-3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: bols;
+}
+
+.cards-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+header {
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 68px;
+    margin-right: 68px;
+
+    height: 100px;
+}
+
+.header__logo {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+
+
+    font-family: 'Cinzel', serif;
+    color: var(--color-secundary);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.header__navigation {
+    width: 305px;
+}
+
+.header__navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.header__navigation a {
+    font-family: 'Inter', sans-serif;
+
+    text-decoration: none;
+    color: var(--color-azul-1);
+
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header__navigation a:hover {
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.header__contact {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.header__contact a {
+    text-decoration: none;
+}
+
+.header__contact-number {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    gap: 8px;
+}
+
+.header__contact-number p {
+    color: var(--color-black);
+}
+
+.botao-secundario {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 20px;
+    border: 1px solid var(--color-secundary);
+
+    background-color: var(--color-white);
+    color: var(--color-secundary);
+
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.botao-secundario:hover {
+    background-color: var(--color-secundary);
+    color: var(--color-white);
+
+    transition: 0.3s;
+}
