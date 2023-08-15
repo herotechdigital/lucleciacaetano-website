@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 :root {
@@ -250,6 +250,8 @@ header {
     justify-content: center;
 
     gap: 0.625rem;
+
+    /* flex-wrap: wrap; */
 }
 
 .inicio__title {}
