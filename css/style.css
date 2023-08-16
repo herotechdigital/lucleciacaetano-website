@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
 :root {
-    --border-radius: 12px;
-
     --color-primary: #029837;
     --color-secundary: #0B6822;
     --color-terciary: #9EE595;
@@ -18,6 +16,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    scroll-behavior: smooth;
+    /* font-size: 62.5%; */
 }
 
 html,
@@ -48,6 +49,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 3.5rem;
     font-weight: bold;
+
+    color: var(--color-azul-1);
 }
 
 .subtitle {
@@ -68,8 +71,12 @@ body {
 
 .top-sections {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: medium;
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    color: var(--color-secundary);
+
+    text-transform: uppercase;
 }
 
 .paragraph {
@@ -93,9 +100,12 @@ body {
 }
 
 .paragraph-3 {
+    color: rgba(0, 0, 0, 0.95);
+    text-align: justify;
+
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: bols;
+    font-size: 1.125rem;
+    font-weight: medium;
 }
 
 .cards-text {
@@ -109,6 +119,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 
     width: inherit;
 
@@ -188,7 +199,7 @@ header {
 
 .botao-primario {
     display: inline-flex;
-    padding: 1rem;
+    padding: 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
@@ -200,7 +211,7 @@ header {
     background-color: var(--color-primary);
     color: var(--color-white);
 
-    font-weight: normal;
+    font-weight: 200;
 
     cursor: pointer;
 }
@@ -262,4 +273,34 @@ header {
 
 .inicio__title h2 {
     color: var(--color-secundary);
+}
+
+.know-me__container {
+    background-color: var(--color-terciary);
+
+    display: flex;
+    padding: 0.625rem 7.5rem 2.5rem 7.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.know-me__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.know-me__text_paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+}
+
+.background-branch {
+    position: absolute;
+    left: -2.5625rem;
+    top: 33.875rem;
+    z-index: 1;
 }
