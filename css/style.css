@@ -304,3 +304,40 @@ header {
     top: 33.875rem;
     z-index: 1;
 }
+
+.about__topcorpus {
+    background: linear-gradient(180deg, var(--color-terciary) 0%, var(--color-white) 59.90%);
+
+    display: flex;
+    padding: 3.25rem 6.9375rem 3rem 6.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.topcorpus__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cards_whatis {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.topcorpus__card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
