@@ -315,7 +315,7 @@ header {
 }
 
 .about__topcorpus {
-    background: linear-gradient(180deg, var(--color-terciary) 0%, var(--color-white) 59.90%);
+    background: var(--color-white);
 
     display: flex;
     padding: 3.25rem 6.9375rem 3rem 6.9375rem;
@@ -345,43 +345,53 @@ header {
 
 }
 
-.card-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.services {
+    background: linear-gradient(180deg, var(--color-terciary) 0%, var(--color-white) 59.90%);
 }
 
-.about_public {
+.services-head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
 
-    display: flex;
-    height: 39.375rem;
-    padding: 3.25rem 6.875rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.625rem;
-    align-self: stretch;
+    margin-bottom: 1.5rem;
 }
 
-.public__cards {
+.services__text_head {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3.5rem;
-}
-
-.card_container {
-    display: flex;
-    padding: 1rem;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
+    gap: 24px;
+    width: 37.5rem;
+}
 
-    border-radius: 1.25rem;
+.gallery {
+    background: inherit;
+}
+
+.gallery-cell {
+    width: 22rem;
+    height: fit-content;
+    margin-right: 24px;
+    background: #8C8;
+
+    display: flex;
+    padding: 16px 16px 32px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    border-radius: 20px;
     background: var(--neutro-2, rgba(243, 243, 243, 0.90));
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
-    box-shadow: 0 0.5rem 1rem 0 rgba(171, 190, 209, 0.40);
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
