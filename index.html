@@ -14,9 +14,10 @@
     <header>
         <div class="header__container">
             <div class="header__logo">
-                <img src="images/main logo white 2.png" alt="Logo">
+                <img src="images/main logo white 2.png" alt="Logo" class="logoImg">
                 <p class="logo-text">Luclecia Caetano</p>
             </div>
+            <img src="images/logo.png" alt="Logo" class="logoImgMobile">
 
             <nav class="header__navigation">
                 <ul>
@@ -51,7 +52,7 @@
                     <button class="botao-primario title">Agende agora</button>
                 </div>
                 <div class="inicio__main-picture">
-                    <img src="images/main-picture.png" alt="Foto de Luclecia Caetano sorrindo.">
+                    <img src="images/main-picture.png" alt="Foto de Luclecia Caetano sorrindo." class="mainpic">
                 </div>
             </div>
         </section>
@@ -59,7 +60,7 @@
         <section class="about__know-me" id="about">
             <img src="images/branchbg.png" class="background-branch">
             <div class="know-me__container">
-                <img src="images/about-me-picture.png" alt="Foto de Luclecia Caetano sorrindo.">
+                <img src="images/about-me-picture.png" alt="Foto de Luclecia Caetano sorrindo." class="aboutpic">
                 <div class="know-me__text">
                     <div class="know-me__text_head">
                         <h4 class="top-sections">Conheça sua terapeuta</h4>
@@ -86,6 +87,7 @@
         </section>
 
         <section class="services" id="services">
+            <img src="images/branchbg2.png" class="background-branch2">
             <div class="services-head">
                 <div class="services__text_head">
                     <div class="services_header">
@@ -248,8 +250,44 @@
                     </div>
                 </div>
             </div>
-            <img src="images/massage-pic.png" alt="Mulher recebendo massagem.">
+            <img src="images/massage-pic.png" alt="Mulher recebendo massagem." class="massagepic">
         </section>
+
+        <footer>
+            <div class="endereco"><img src="images/logo.png" alt="logo">
+                <p class="paragraph">R. São Serapião, 159 - Vila Ré, São Paulo - SP, 03664-000</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href=#inicio>Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <p>Conecte-se comigo</p>
+                <div class="contact_icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+                        <path
+                            d="M34.8332 19.5C34.8332 10.76 27.7398 3.66669 18.9998 3.66669C10.2598 3.66669 3.1665 10.76 3.1665 19.5C3.1665 27.1634 8.61317 33.5442 15.8332 35.0167V24.25H12.6665V19.5H15.8332V15.5417C15.8332 12.4859 18.319 10 21.3748 10H25.3332V14.75H22.1665C21.2957 14.75 20.5832 15.4625 20.5832 16.3334V19.5H25.3332V24.25H20.5832V35.2542C28.579 34.4625 34.8332 27.7175 34.8332 19.5Z"
+                            fill="black" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+                        <path
+                            d="M12.3498 3.66669H25.6498C30.7165 3.66669 34.8332 7.78335 34.8332 12.85V26.15C34.8332 28.5856 33.8656 30.9214 32.1434 32.6436C30.4212 34.3658 28.0854 35.3334 25.6498 35.3334H12.3498C7.28317 35.3334 3.1665 31.2167 3.1665 26.15V12.85C3.1665 10.4144 4.13403 8.07863 5.85624 6.35642C7.57845 4.63421 9.91427 3.66669 12.3498 3.66669ZM12.0332 6.83335C10.5214 6.83335 9.07162 7.43389 8.00266 8.50284C6.9337 9.5718 6.33317 11.0216 6.33317 12.5334V26.4667C6.33317 29.6175 8.88234 32.1667 12.0332 32.1667H25.9665C27.4782 32.1667 28.9281 31.5662 29.997 30.4972C31.066 29.4282 31.6665 27.9784 31.6665 26.4667V12.5334C31.6665 9.38252 29.1173 6.83335 25.9665 6.83335H12.0332ZM27.3123 9.20835C27.8372 9.20835 28.3407 9.41687 28.7118 9.78804C29.083 10.1592 29.2915 10.6626 29.2915 11.1875C29.2915 11.7124 29.083 12.2158 28.7118 12.587C28.3407 12.9582 27.8372 13.1667 27.3123 13.1667C26.7874 13.1667 26.284 12.9582 25.9129 12.587C25.5417 12.2158 25.3332 11.7124 25.3332 11.1875C25.3332 10.6626 25.5417 10.1592 25.9129 9.78804C26.284 9.41687 26.7874 9.20835 27.3123 9.20835ZM18.9998 11.5834C21.0995 11.5834 23.1131 12.4174 24.5978 13.9021C26.0824 15.3868 26.9165 17.4004 26.9165 19.5C26.9165 21.5996 26.0824 23.6133 24.5978 25.0979C23.1131 26.5826 21.0995 27.4167 18.9998 27.4167C16.9002 27.4167 14.8866 26.5826 13.4019 25.0979C11.9172 23.6133 11.0832 21.5996 11.0832 19.5C11.0832 17.4004 11.9172 15.3868 13.4019 13.9021C14.8866 12.4174 16.9002 11.5834 18.9998 11.5834ZM18.9998 14.75C17.7401 14.75 16.5319 15.2505 15.6411 16.1413C14.7503 17.0321 14.2498 18.2402 14.2498 19.5C14.2498 20.7598 14.7503 21.968 15.6411 22.8588C16.5319 23.7496 17.7401 24.25 18.9998 24.25C20.2596 24.25 21.4678 23.7496 22.3586 22.8588C23.2494 21.968 23.7498 20.7598 23.7498 19.5C23.7498 18.2402 23.2494 17.0321 22.3586 16.1413C21.4678 15.2505 20.2596 14.75 18.9998 14.75Z"
+                            fill="black" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+                        <path
+                            d="M30.0833 5.25C30.9232 5.25 31.7286 5.58363 32.3225 6.1775C32.9164 6.77136 33.25 7.57681 33.25 8.41667V30.5833C33.25 31.4232 32.9164 32.2286 32.3225 32.8225C31.7286 33.4164 30.9232 33.75 30.0833 33.75H7.91667C7.07681 33.75 6.27136 33.4164 5.6775 32.8225C5.08363 32.2286 4.75 31.4232 4.75 30.5833V8.41667C4.75 7.57681 5.08363 6.77136 5.6775 6.1775C6.27136 5.58363 7.07681 5.25 7.91667 5.25H30.0833ZM29.2917 29.7917V21.4C29.2917 20.031 28.7479 18.7182 27.7799 17.7502C26.8118 16.7822 25.499 16.2383 24.13 16.2383C22.7842 16.2383 21.2167 17.0617 20.4567 18.2967V16.5392H16.0392V29.7917H20.4567V21.9858C20.4567 20.7667 21.4383 19.7692 22.6575 19.7692C23.2454 19.7692 23.8092 20.0027 24.2249 20.4184C24.6406 20.8341 24.8742 21.3979 24.8742 21.9858V29.7917H29.2917ZM10.8933 14.0533C11.5988 14.0533 12.2754 13.7731 12.7742 13.2742C13.2731 12.7754 13.5533 12.0988 13.5533 11.3933C13.5533 9.92083 12.3658 8.7175 10.8933 8.7175C10.1837 8.7175 9.50305 8.99942 9.00123 9.50123C8.49942 10.003 8.2175 10.6837 8.2175 11.3933C8.2175 12.8658 9.42083 14.0533 10.8933 14.0533ZM13.0942 29.7917V16.5392H8.70833V29.7917H13.0942Z"
+                            fill="black" />
+                    </svg>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>2023 © Luclecia Caetano. Todos os direitos reservados.</p>
+        </div>
     </main>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
