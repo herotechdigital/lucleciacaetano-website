@@ -163,8 +163,9 @@ header {
     font-weight: normal;
 }
 
-.header__navigation {
-    width: 19rem;
+.header__navigation ul {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .header__navigation ul {
@@ -348,8 +349,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: fit-content;
+    height: fit-content;
     gap: 0.625rem;
 
+    margin-bottom: 1rem;
 }
 
 .background-branch2 {
@@ -379,7 +383,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 24px;
+    gap: 1.5rem;
     width: 37.5rem;
 }
 
@@ -437,6 +441,7 @@ footer nav ul {
 
 footer nav ul a {
     text-decoration: none;
+    font-size: 1.25rem;
 }
 
 .contact {
@@ -444,6 +449,7 @@ footer nav ul a {
     flex-direction: column;
     align-items: center;
     gap: 2.375rem;
+    font-size: 1.25rem;
 }
 
 .contact_icons {
@@ -455,7 +461,7 @@ footer nav ul a {
 .endereco {
     display: flex;
     align-items: center;
-    gap: 5.375rem;
+    gap: 3rem;
 
     width: 33.75rem;
 }
@@ -465,6 +471,7 @@ footer nav ul a {
     padding: 0.313rem 0 0.313rem 0;
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
 
     background-color: var(--color-terciary);
 }
@@ -482,7 +489,26 @@ footer nav ul a {
     width: 25rem;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 80%;
+    }
+
+    .know-me__text_paragraph {
+        height: fit-content;
+    }
+
+    .know-me__text_paragraph p,
+    strong {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 965px) {
     * {
         font-size: 62.5%;
     }
@@ -495,7 +521,7 @@ footer nav ul a {
 
     .logoImgMobile {
         display: inline;
-        width: 130px;
+        width: 12rem;
     }
 
     .header__contact {
