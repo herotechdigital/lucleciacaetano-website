@@ -430,6 +430,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 10rem;
+
+    background: var(--color-terciary, rgba(243, 243, 243, 0.90));
 }
 
 footer nav {}
@@ -519,7 +521,9 @@ footer nav ul a {
         font-size: 62.5%;
     }
 
-    .header {}
+    header {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
 
     .header__logo {
         display: none;
@@ -527,7 +531,7 @@ footer nav ul a {
 
     .logoImgMobile {
         display: inline;
-        width: 12rem;
+        width: 10rem;
     }
 
     .header__contact {
