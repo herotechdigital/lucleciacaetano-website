@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luclecia Caetano</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/main logo white 2.png" type="image/x-icon">
 </head>
@@ -40,6 +41,45 @@
                     <button class="botao-secundario title">
                         Agendar consulta
                     </button></a>
+
+            </section>
+
+            <section class="header__contact-mobile">
+                <a href="https://wa.me/5511986922597">
+                    <button class="botao-primario title">
+                        Agendar
+                    </button></a>
+
+                <div class="mobile_menu_icon">
+                    <button onclick="showMenu()">
+                        <img class="icon" src="/images/menusvg.svg" alt="Menu Button">
+                    </button>
+                </div>
+
+                <div class="mobile_menu closed">
+                    <ul>
+                        <li class="nav_item">
+                            <a onclick="closeMenu()" class="navigation-text" href="#inicio">Início</a>
+                        </li>
+                        <hr>
+                        <li class="nav_item">
+                            <a onclick="closeMenu()" class="navigation-text" href="#about">Sobre</a>
+                        </li>
+                        <hr>
+                        <li class="nav_item">
+                            <a onclick="closeMenu()" class="navigation-text" href="#services">Serviços</a>
+                        </li>
+                        <hr>
+                    </ul>
+
+                    <div class="header__contact-number">
+                        <img src="images/phone.png" alt="Telefone">
+                        <div>
+                            <p class="cards-text">Ligue agora</p>
+                            <p class="paragraph-2">(11) 98692-2597</p>
+                        </div>
+                    </div>
+                </div>
 
             </section>
         </div>
@@ -303,6 +343,35 @@
     </main>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        function showMenu(event) {
+            const menuMobile = document.querySelector('.mobile_menu');
+
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                menuMobile.classList.add('closed');
+                document.querySelector('.icon').src = "images/menusvg.svg"
+            } else {
+                menuMobile.classList.remove('closed');
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/closebtn.svg"
+            }
+        }
+
+        function closeMenu(event) {
+            const menuMobile = document.querySelector('.mobile_menu');
+
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                menuMobile.classList.add('closed');
+                document.querySelector('.icon').src = "images/menusvg.svg"
+            } else {
+                menuMobile.classList.remove('closed');
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/closebtn.svg"
+            }
+        }
+    </script>
 </body>
 
 </html>
