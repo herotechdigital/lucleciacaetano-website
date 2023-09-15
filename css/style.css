@@ -85,6 +85,7 @@ body {
     font-size: 1.125rem;
     font-weight: lighter;
     line-height: 24px;
+    word-wrap: break-word;
 }
 
 .paragraph-1 {
@@ -194,6 +195,22 @@ header {
     font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+}
+
+.gallery-cell {
+    height: fit-content;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.gallery-list li {
+    list-style: none;
 }
 
 .header__contact {
@@ -390,6 +407,10 @@ header {
     text-align: center;
     gap: 1.5rem;
     width: 37.5rem;
+}
+
+.cards_container {
+    height: fit-content;
 }
 
 .gallery {
