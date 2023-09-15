@@ -644,6 +644,8 @@ footer nav ul a {
 
     .footernav a {
         font-size: 1.5rem;
+
+        color: var(--color-azul-1);
     }
 
     .contact p {
